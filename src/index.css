@@ -1,0 +1,316 @@
+/*english fonts */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap");
+
+/* nepali fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.a-hover {
+  @apply relative no-underline text-white cursor-pointer border-b border-transparent transition-all duration-300 ease-in-out hover:border-gray-500 hover:text-gray-300;
+}
+
+.nav-sub-menu-text {
+  @apply hover:text-primary-blue flex w-full items-center border-b border-gray-200 px-6 py-2 text-sm transition duration-150 ease-in-out hover:bg-gray-50;
+}
+
+.max-w {
+  @apply mx-auto max-w-[2560px];
+}
+.w-padding {
+  @apply px-4 md:px-10 lg:px-14 xl:px-20;
+}
+
+.slider-card {
+  @apply animation border-extralightBorder relative z-10 flex h-72 
+    cursor-pointer flex-col items-center justify-center overflow-hidden rounded border py-6 px-4;
+}
+
+.slider-child {
+  @apply animation bg-primary-green group-hover:text-primary-blue mx-auto grid h-24 w-24 place-content-center rounded-full text-white group-hover:h-16 group-hover:w-16 group-hover:bg-white;
+}
+
+.slider-h1 {
+  @apply animation mt-3 px-2 text-center font-semibold text-white group-hover:text-white;
+}
+.slider-icon {
+  @apply animation h-12 w-12 group-hover:h-8 group-hover:w-8;
+}
+
+.slider-hidden-paragraph {
+  @apply animation mt-3 max-h-0 overflow-hidden  text-center text-white group-hover:max-h-64;
+}
+
+.header-card {
+  @apply animation border-extralightBorder hover:text-text-primary cursor-pointer border hover:bg-slate-100;
+}
+
+.header-card-active {
+  @apply animation text-white;
+}
+.footer-links {
+  @apply mb-2 text-base text-white md:text-sm;
+}
+
+.footer-social-links {
+  @apply mr-6 text-white;
+}
+
+.title-style {
+  @apply text-primary-red font-Rakkas mt-7 text-3xl font-semibold tracking-wide sm:text-5xl;
+}
+.sub-title-style {
+  @apply text-primary-red font-Poppins text-3xl font-semibold tracking-wide;
+}
+.button-style {
+  @apply bg-primary-blue mx-auto rounded px-6 py-2 text-white;
+}
+
+.view-more {
+  @apply animation text-primary-blue hover:text-primary-red flex items-center space-x-1 text-sm hover:scale-110;
+}
+.card-button {
+  @apply animation bg-primary-red rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none px-6 py-2 text-sm text-white hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl;
+}
+.about-button {
+  @apply bg-primary-blue no-underline flex-shrink-0 animation rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none px-6 py-1 text-xs text-white hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl md:py-2 md:text-base lg:text-xl;
+}
+
+.news-button {
+  @apply bg-primary-blue font-Yatra animation animation rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none px-6 py-2 text-xs text-white hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl md:text-xl lg:text-2xl;
+}
+
+.team-card {
+  @apply border-primary-blue animation text-primary-blue rounded-tl-[2.5rem] rounded-br-[2.5rem] rounded-tr-none rounded-bl-none border-2 px-4 py-7 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-[2.5rem] hover:rounded-bl-[2.5rem];
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu:hover {
+  display: block;
+}
+.service-dropdown:hover + .dropdown-menu {
+  display: block;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.slider-header-button {
+  @apply z-20 w-1/4 cursor-pointer px-1 text-center text-xs md:text-sm lg:text-2xl;
+}
+
+/* news section */
+.news-item-img {
+  @apply h-20 w-20 rounded-md object-cover md:!h-32 md:!w-32 lg:!h-20 lg:!w-20 xl:!h-32 xl:!w-32;
+}
+
+.news-item-text {
+  @apply animation font-Poppins text-primary-blue hover:text-primary-red text-base font-bold md:text-xl;
+}
+
+/* trending */
+.trend-item {
+  @apply flex flex-row-reverse  items-center gap-5 lg:!flex-row;
+}
+
+.trending-text {
+  @apply animation font-Poppins text-primary-blue hover:text-primary-red flex-1 text-base font-bold md:text-xl;
+}
+
+.modal-backdrop {
+  @apply !z-0;
+}
+
+.guideline-circle {
+  @apply text-text-paragraph grid h-5 w-5 place-content-center rounded-full border-2 border-blue-300 bg-[#DDE9FB] text-xs leading-7 md:!h-8 md:!w-8 md:text-sm;
+}
+
+.ribbon-tr {
+  @apply absolute top-5 -right-14 h-4 w-40 rotate-45 bg-yellow-400;
+}
+.ribbon-bl {
+  @apply bg-primary-red absolute bottom-5 -left-14 h-4 w-40 rotate-45;
+}
+
+/* flip animation  */
+
+.flip-container {
+  -webkit-perspective: 1000;
+  margin: 0 auto 60px auto;
+  cursor: pointer;
+  height: 16rem;
+}
+
+.flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor: pointer;
+}
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.front {
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.back {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/* flip animation end  */
+
+.card-image-clip {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.team-card:hover > .card-image-clip {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+/* order form */
+
+.order-input {
+  @apply rounded-md border-2 border-gray-600 px-2 py-3  placeholder:text-xs md:px-2 md:placeholder:text-base 2xl:py-2;
+}
+
+/* branch details */
+.branch-div {
+  @apply bg-primary-red font-Acme rounded-t-2xl py-2 px-1 text-center text-xl font-bold text-white md:text-3xl;
+}
+
+.branch-title {
+  @apply text-primary-red font-Bree text-sm font-bold md:text-xl;
+}
+
+.card-div {
+  @apply flex cursor-pointer flex-col justify-start overflow-hidden rounded-md bg-cyan-400 shadow-md hover:shadow-xl;
+}
+
+.form-div {
+  @apply m-0 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none;
+}
+
+/* staff dashboard dropdown */
+
+.dropdown-header {
+  @apply animation mx-2 flex cursor-pointer items-center justify-start gap-0.5 rounded-md py-1  font-bold;
+}
+
+.dropdown-item-bg {
+  @apply text-primary-blue  bg-gray-100  text-center font-semibold;
+}
+
+.dropdown-item {
+  @apply animation flex w-full justify-start p-2 pl-2 text-left text-sm  hover:bg-gray-200;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  @apply text-black hover:text-white text-base flex items-center justify-center font-bold h-8 w-8 text-center shrink-0 bg-gray-300 rounded-full !important;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  @apply text-black hover:text-white text-base flex items-center justify-center font-bold h-8 w-8 text-center shrink-0 bg-gray-300 rounded-full !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-[#869791];
+}
+
+.slider {
+  @apply !h-[300px] sm:!h-[400px] lg:!h-full;
+}
+
+.slider > .nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: url("https://svgshare.com/i/jkK.svg") no-repeat center center /
+    40px;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.slider > .previousButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: url("https://svgshare.com/i/jkZ.svg") no-repeat center center /
+    40px;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+

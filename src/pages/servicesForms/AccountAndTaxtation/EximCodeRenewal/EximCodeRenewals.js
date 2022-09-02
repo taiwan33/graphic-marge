@@ -1,0 +1,171 @@
+export const upload_document = [
+  {
+    ip1: "हामी संग कर चुक्ता सम्बन्धि काम नगरेको भए कर चुक्ता प्रमाण पत्र",
+    sn: 1,
+    type: "file",
+    name: "tax_clearance_certificate",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "बैंक ग्यरेन्टिको कागज (चिठी)",
+    sn: 2,
+    type: "file",
+    name: "bank-guarenty_letter",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+
+  {
+    ip1: "अन्य.........",
+    sn: 3,
+    type: "file",
+    name: "others",
+    validation: {
+      required: {
+        value: false,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+];
+export const Exim_code_renew = [
+  {
+    ip1: "व्यवसायको नाम ",
+    type: "text",
+    name: "business_name",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "पान नं. ",
+    type: "number",
+    name: "pan_number",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "सम्बन्धित व्यक्तीको ठेगाना",
+    type: "text",
+    name: "person_address",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+
+  {
+    ip1: "व्यवसायको ठेगाना",
+    type: "text",
+    name: "address",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "सम्‍बन्धीत व्यक्तीको नाम",
+    type: "text",
+    name: "person_name",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "सम्‍बन्धीत व्यक्तीको सम्पर्क नं",
+    type: "text",
+    name: "address",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+];
+export const upload_document_v2 = [
+  {
+    ip1: "ईक्जिम कोड प्रमाण पत्र",
+    sn: 1,
+    type: "file",
+    name: "exim_code_report",
+    validation: {
+      required: {
+        value: false,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "बैंक ग्यरेन्टिको कागज (चिठी)",
+    sn: 2,
+    type: "file",
+    name: "bank_guarenty_letter",
+    validation: {
+      required: {
+        value: true,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+
+  {
+    ip1: "पान दर्ता प्रमाण पत्र",
+    sn: 3,
+    type: "file",
+    name: "certificate_of_pan",
+    validation: {
+      required: {
+        value: false,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "गत आ.व.को कर चुक्ता प्रमाण पत्र",
+    sn: 4,
+    type: "file",
+    name: "tax_clearance_report",
+    validation: {
+      required: {
+        value: false,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+  {
+    ip1: "अन्य",
+    sn: 5,
+    type: "file",
+    name: "others",
+    validation: {
+      required: {
+        value: false,
+        message: "This Field is mandatory",
+      },
+    },
+  },
+];
